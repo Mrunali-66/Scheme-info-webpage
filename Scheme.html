@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes Portal</title>
+    <link rel="stylesheet" href="scheme.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <h2>GovSchemes</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#schemes">Schemes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Government Welfare Schemes</h1>
+        <p>Find and apply for government schemes you're eligible for</p>
+        <div class="search-box">
+            <input type="text" id="scheme-search" placeholder="Search for schemes...">
+            <button onclick="searchSchemes()" class="btn">Search</button>
+        </div>
+    </section>
+
+    <div class="category-filters" id="category-filters">
+        <button class="category-btn active" data-category="all">All Schemes</button>
+        <button class="category-btn" data-category="education">Education</button>
+        <button class="category-btn" data-category="agriculture">Agriculture</button>
+        <button class="category-btn" data-category="health">Health</button>
+        <button class="category-btn" data-category="housing">Housing</button>
+        <button class="category-btn" data-category="business">Business</button>
+    </div>
+
+    <main class="schemes-container" id="schemes-list">
+        <!-- Schemes will be dynamically loaded here -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: support@govschemes.gov</p>
+                <p>Phone: 1800-XXX-XXXX</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p>FAQs</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scheme.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #1a4480;
+    --secondary-color: #e1f3f8;
+    --accent-color: #d83933;
+    --text-color: #1b1b1b;
+    --education-color: #4c2c92;
+    --agriculture-color: #2e8540;
+    --health-color: #e31c3d;
+    --housing-color: #02bfe7;
+    --business-color: #f9c642;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+.btn{
+    border-radius: 15%;
+    background-color: #006BFF;
+    color: #ffff;
+    font-weight: bolder;
+    width: 80px;
+}
+.btn:hover{
+    background-color: #FFF100;
+    color: black;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background: var(--secondary-color);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.search-box {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.category-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    transform: translateY(-2px);
+}
+
+.category-btn.active {
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.category-btn[data-category="all"] {
+    background: var(--primary-color);
+    color: white;
+}
+
+.category-btn[data-category="education"] {
+    background: var(--education-color);
+    color: white;
+}
+
+.category-btn[data-category="agriculture"] {
+    background: var(--agriculture-color);
+    color: white;
+}
+
+.category-btn[data-category="health"] {
+    background: var(--health-color);
+    color: white;
+}
+
+.category-btn[data-category="housing"] {
+    background: var(--housing-color);
+    color: white;
+}
+
+.category-btn[data-category="business"] {
+    background: var(--business-color);
+    color: black;
+}
+
+.schemes-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.scheme-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.scheme-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.scheme-card.education {
+    border-top: 4px solid var(--education-color);
+}
+
+.scheme-card.agriculture {
+    border-top: 4px solid var(--agriculture-color);
+}
+
+.scheme-card.health {
+    border-top: 4px solid var(--health-color);
+}
+
+.scheme-card.housing {
+    border-top: 4px solid var(--housing-color);
+}
+
+.scheme-card.business {
+    border-top: 4px solid var(--business-color);
+}
+
+.category-label {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.education .category-label {
+    background: var(--education-color);
+}
+
+.agriculture .category-label {
+    background: var(--agriculture-color);
+}
+
+.health .category-label {
+    background: var(--health-color);
+}
+
+.housing .category-label {
+    background: var(--housing-color);
+}
+
+.business .category-label {
+    background: var(--business-color);
+    color: black;
+}
+
+.scheme-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.eligibility-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.apply-btn {
+    display: flex;
+    margin-top: 1rem;
+    width: 50%;
+    height: 10%;
+    border-radius: 15%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: #1b1b1b;
+    font-weight: bolder;
+    background-color: #00FF9C;
+}
+.apply-btn:hover{
+    background-color: #FF6500;
+    color: #000000;
+}
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .schemes-container {
+        grid-template-columns: 1fr;
+    }
+}
